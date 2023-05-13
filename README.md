@@ -110,7 +110,7 @@ If the `timerange` option is provided:
 ./plot_scrambling.sh M_ezspec -t 250,750
 ```
 
-the chart might look like this:
+the chart will look like this:
 ![Ezspec chart with time range](examples/timerange_ezspec.png)
 
 ## Specifying the colors of the lines
@@ -121,7 +121,7 @@ To control the colors used, you can use the `-c`/`--colors` option.
 
 This option expects a string of colors separated by commas. Each color will be assigned to the corresponding block in the Measurements file, following the order specified.
 
-For instance, plotting `Measurements` from the `examples directory without specifying colors:
+For instance, plotting `Measurements` from the `examples` directory without specifying colors:
 ```
 ./plot_scrambling.sh Measurements -t 50,400 -o fluoressence_default.png
 ```
@@ -134,12 +134,12 @@ If the `colors` options is provided:
 ```
 ./plot_scrambling.sh Measurements -t 50,400 -c blue,magenta,black,lime -o fluoressence_colors.png
 ```
-the chart might look like this:
+the chart will look like this:
 ![FluorEssence chart with specified colors](examples/fluoressence_colors.png)
 
 Note that a color must be provided for each block. If only one color is given, it will be used for all blocks.
 
-You can also use hexadecimal codes to specify colors (e.g., `#7ef542,#42b6f5,#cb42f5,#f5bc42`). If you choose to use hexadecimal codes, make sure to enclose the color specification in quotes.
+You can also use hexadecimal codes to specify colors (e.g., `#7ef542,#42b6f5,#cb42f5,#f5bc42`). If you choose to use hexadecimal codes, make sure to enclose the color specification in quotes:
 ```
 ./plot_scrambling.sh Measurements -t 50,400 -c '#7ef542,#42b6f5,#cb42f5,#f5bc42'
 ```
