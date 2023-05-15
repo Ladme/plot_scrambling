@@ -1,6 +1,6 @@
 # Plot Scrambling
 
-Script for plotting the results of fluoresence-based dithionite assay for the measurement of scrambling activity.
+Script for plotting the results of fluoresence-based dithionite assay for scrambling activity.
 
 ## Usage
 
@@ -24,7 +24,7 @@ Example:
 > Protein ABC
 ```
 
-The subsequent lines specify individual measurements for this block. Each line must contain (1) the path to a file containing the measured data and (2) the time at which dithionite was added (in seconds). The intensity of the signal measured between the start of the experiment and the addition of dithionite is used for signal normalization.
+The subsequent lines specify individual measurements for this block. Each line must contain (1) the path to a file containing the measured data and (2) the time at which dithionite was added (in seconds). The provided path is relative to the directory containing the Measurements file. The intensity of the signal measured between the start of the experiment and the addition of dithionite is used for signal normalization.
 
 Example:
 ```
@@ -40,7 +40,7 @@ Refer to the `examples` directory for sample Measurements files.
 
 ### Advanced timing information
 
-Timing information can be supplemented with the time that should be used as the start of the experiment. In this case, the measurement line should follow the format:
+Time of dithionite addition can be supplemented with the time that should be used as the start of the experiment. In this case, the measurement line should follow the format:
 
 ```
 {PATH_TO_FILE} {START_TIME}-{DITHIONITE_ADDITION}
